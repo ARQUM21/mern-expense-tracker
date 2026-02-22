@@ -1,4 +1,4 @@
-export const BASE_URL = "https://mern-expense-tracker-backend-ten.vercel.app";
+export const BASE_URL = "https://mern-expense-tracker-backend-gold.vercel.app";
 
 // utils/apiPaths.js
 export const API_PATHS = {
