@@ -1,0 +1,12 @@
+const express = require("express");
+const { registerUser, loginUser, getUserInfo } = require ('../controllers/authcontroller');
+const { protect } = require('../middleware/authMiddleware');
+const upload = require("../middleware/uploadMiddleware");
+    
+const router = express.Router();
+
+router.post("/register", upload.single("profileImage"), registerUser);
+router.post('/login', loginUser);
+router.get('/getUser', protect, getUserInfo);
+
+module.exports = router;
