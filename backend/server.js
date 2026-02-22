@@ -30,8 +30,7 @@ app.use('/api/v1/expense', expenseRoutes);
 app.use('/api/v1/dashboard', dashboardRoutes);
 
 
-// serve uploads folder
-app.use("/uploads", express.static(path.join(__dirname, "uploads")));
+app.get('/', (req, res) => res.send('API is working'));
 
 
 const PORT = process.env.PORT || 5000;
