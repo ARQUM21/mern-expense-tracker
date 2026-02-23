@@ -50,20 +50,19 @@ A modern, full-featured **Expense Tracker** web application built with the MERN 
 ## 📸 Screenshots
 
 ### Signup Page
-![Signup](screenshots/signup.png)
+![Signup](screenshots/trackersignup.PNG)
 
 ### Login Page
-![Login](screenshots/login.png)
+![Login](screenshots/trackerlogin.PNG)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
-
-### Expense Page
-![Expense](screenshots/expense.png)
+![Dashboard](screenshots/trackerdashboard.PNG)
 
 ### Income Page
-![Income](screenshots/income.png)
+![Income](screenshots/trackerincome.PNG)
 
+### Expense Page
+![Expense](screenshots/trackerexpense.PNG)
 
 ---
 
