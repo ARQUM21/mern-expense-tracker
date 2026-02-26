@@ -2,6 +2,8 @@ const xlsx = require('xlsx');
 const User = require("../models/User");
 const Income = require('../models/Income');
 
+// add 
+
 // Add Income Source
 exports.addIncome = async (req, res) => {
   const userId = req.user.id;
@@ -81,7 +83,7 @@ exports.downloadIncomeExcel = async (req, res) => {
 
     xlsx.utils.book_append_sheet(wb, ws, "Income");
 
-    // Buffer fix - file server pe save nahi hogi
+    // do not save on file server
     const buffer = xlsx.write(wb, { type: "buffer", bookType: "xlsx" });
 
     res.setHeader("Content-Disposition", "attachment; filename=income_details.xlsx");
